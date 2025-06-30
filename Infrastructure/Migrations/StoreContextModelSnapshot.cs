@@ -41,7 +41,7 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PirctureUrl")
+                    b.Property<string>("PictureUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -57,7 +57,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("products");
+                    b.ToTable("Products");
                 });
 #pragma warning restore 612, 618
         }

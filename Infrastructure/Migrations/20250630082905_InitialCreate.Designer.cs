@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20250629145411_InitialCreate")]
+    [Migration("20250630082905_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -44,7 +44,7 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PirctureUrl")
+                    b.Property<string>("PictureUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -60,7 +60,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("products");
+                    b.ToTable("Products");
                 });
 #pragma warning restore 612, 618
         }
